@@ -10,6 +10,10 @@ The script performs three main functions:
 2. Displays total acceleration strength on the LED screen every five seconds.  
 3. Sends acceleration data wirelessly using the Micro:bit’s radio module on group **18**, so that another Micro:bit can receive and display the same data.
 
+Technologies Used
+
+Microbit V2.0
+
 ---
 
 ## How It Works
@@ -74,4 +78,30 @@ Battery pack
 String or Ribbon
 
 (Optional) Collar or Harness
+
+## Set Up
+
+Download the code onto respective microbits
+
+Attach the BBC Microbit tracker to a battery back
+
+Attach to a harness or collar, securing with a string
+
+Plug the second BBC Microbit into the computer used
+
+Ensure numbers displayed on both microbits align
+
+## Project Status
+
+Complete
+
+## Room for Improvement
+
+Room for improvement
+
+To do
+
+
+## Acknowledgements
+
 
