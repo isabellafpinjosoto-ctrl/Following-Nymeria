@@ -105,3 +105,16 @@ To do
 ## Acknowledgements
 
 
+BBC. (2025, July 9). Introducing the BBC micro:bit - BBC Make It Digital. Youtube. https://youtu.be/Wuza5WXiMkc
+
+Donat, W. (2017). Getting started with the micro:bit : coding and making with the BBC’s Open Development Board  (First edition.). Maker Media.
+
+‌Halfacree, G. (2018). _The official BBC micro:bit user guide_ . John Wiley & Sons.
+
+Instructables. (2021). Animal Tracker With Micro:bit. Instructables. https://www.instructables.com/Animal-Tracker-With-Microbit/
+Micro:bit Educational Foundation. (2020). Animal tracker introduction. YouTube. https://www.youtube.com/watch?v=hEv0xds48Wo
+
+Monk, S. (2019). _Micro:bit for mad scientists: 30 clever coding and electronics projects for kids_. No Starch Press, Inc
+
+Pearce, M. (2016). Cat tracking program makes owners re-think pets’ behaviour and how they manage their moggies. Abc.net.au; ABC News. https://www.abc.net.au/news/2016-05-20/cat-tracking-program-makes-owners-re-think-pet-behaviour/7431248
+‌
