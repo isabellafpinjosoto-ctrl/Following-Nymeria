@@ -22,7 +22,7 @@ Microbit V2.0
 - The Micro:bit logs acceleration values on the X, Y, and Z axes every 100 ms (0.1 seconds).  
 - Data is stored in the datalogger for later export via the MakeCode editor.
 
-```python
+
 datalogger.log(
     datalogger.create_cv("x", input.acceleration(Dimension.X)),
     datalogger.create_cv("y", input.acceleration(Dimension.Y)),
@@ -101,8 +101,6 @@ Visualisation for tracking movements
 
 Potential for a GPS tracking
 
-
-To do
 
 
 ## Acknowledgements
