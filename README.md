@@ -57,7 +57,7 @@ Flash the code to your Micro:bit.
 
 Load the same project onto a second Micro:bit to receive data.
 
-####### Testing
+##### Testing
 
 Shake or move the transmitting Micro:bit — the acceleration strength should appear on both:
 
