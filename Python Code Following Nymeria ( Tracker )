@@ -1,0 +1,26 @@
+# send_number to radio 18
+# display acceleration
+# make sure to track x y axis
+
+def on_received_number(receivedNumber):
+    basic.show_number(receivedNumber)
+radio.on_received_number(on_received_number)
+
+# set the radio to link to receiver radio group (18)
+radio.set_group(18)
+# show_number of acceleration to be received by the data from nymeria
+# define function
+# send_number to radio 18
+# display acceleration
+# make sure to track x y axis
+
+def on_forever():
+    radio.send_number(input.acceleration(Dimension.STRENGTH))
+basic.forever(on_forever)
+
+# show the number of acceleration and then pause every five seconds
+
+def on_forever2():
+    basic.show_number(input.acceleration(Dimension.STRENGTH))
+    basic.pause(5000)
+basic.forever(on_forever2)
