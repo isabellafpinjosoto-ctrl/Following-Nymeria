@@ -95,7 +95,7 @@ Ensure numbers displayed on both microbits align
 
 Complete
 
-##### Room for Improvement
+###### Room for Improvement
 
 Visualisation for tracking movements
 
