@@ -29,14 +29,14 @@ datalogger.log(
     datalogger.create_cv("z", input.acceleration(Dimension.Z))
 )
 
-## 2. Display Acceleration
+#### 2. Display Acceleration
 
 The Micro:bit shows the overall acceleration strength on its LED screen every five seconds:
 
 basic.show_number(input.acceleration(Dimension.STRENGTH))
 basic.pause(5000)
 
-## 3. Radio Transmission
+##### 3. Radio Transmission
 
 The Micro:bit sends its acceleration strength over the radio to other Micro:bits on radio group 18.
 
@@ -45,7 +45,7 @@ A receiver Micro:bit can listen and display this incoming data.
 radio.set_group(18)
 radio.send_number(input.acceleration(Dimension.STRENGTH))
 
-## Setup Instructions
+###### Setup Instructions
 
 Open MakeCode / MicroPython editor at https://makecode.microbit.org/
 
@@ -57,7 +57,7 @@ Flash the code to your Micro:bit.
 
 Load the same project onto a second Micro:bit to receive data.
 
-## Testing
+####### Testing
 
 Shake or move the transmitting Micro:bit — the acceleration strength should appear on both:
 
@@ -67,7 +67,7 @@ The receiving Micro:bit’s screen
 
 Data points will also be recorded in the datalogger and can be viewed in MakeCode or downloaded as a .csv file.
 
-## Requirements
+###### Requirements
 
 2 × BBC Micro:bits (for send + receive)
 
@@ -79,7 +79,7 @@ String or Ribbon
 
 (Optional) Collar or Harness
 
-## Set Up
+###### Set Up
 
 Download the code onto respective microbits
 
@@ -91,13 +91,16 @@ Plug the second BBC Microbit into the computer used
 
 Ensure numbers displayed on both microbits align
 
-## Project Status
+###### Project Status
 
 Complete
 
-## Room for Improvement
+##### Room for Improvement
 
-Room for improvement
+Visualisation for tracking movements
+
+Potential for a GPS tracking
+
 
 To do
 
