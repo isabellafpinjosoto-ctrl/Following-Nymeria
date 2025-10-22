@@ -1,0 +1,48 @@
+import neopixel
+
+# Initialise the NeoPixel strip with 12 LEDs
+strip = neopixel.create(DigitalPin.P0, 12, NeoPixelMode.RGB)
+
+# settings of colours and brightness 
+
+def on_forever3():
+    strip.rotate(1)
+    strip.set_brightness(1)
+    strip.show()
+    basic.pause(200)
+basic.forever(on_forever3)
+
+# log acceleration data
+datalogger.log(datalogger.create_cv("acceleration", input.acceleration(Dimension.STRENGTH)))
+datalogger.set_column_titles("x", "y", "z")
+# connect to same radio group as the nymeria tracker
+radio.set_group(18)
+# have the tracker send_number of the acceleration
+
+def on_forever():
+    radio.send_number(input.acceleration(Dimension.STRENGTH))
+basic.forever(on_forever)
+
+# show the number of acceleration and then pause every five seconds
+
+def on_forever2():
+    basic.show_number(input.acceleration(Dimension.STRENGTH))
+    basic.pause(5000)
+basic.forever(on_forever2)
+
+# log the data of every acceleration point every second 
+
+def on_every_interval():
+    if True:
+        datalogger.log(datalogger.create_cv("x", input.acceleration(Dimension.X)),
+            datalogger.create_cv("y", input.acceleration(Dimension.Y)),
+            datalogger.create_cv("z", input.acceleration(Dimension.Z)))
+loops.every_interval(100, on_every_interval)
+
+# translate the data of acceleration to the data of the neopixel values for a visual display 
+
+Math.map(0, 0, 1023, 0, 255)
+
+# Visualisation of the data values 
+
+strip2 = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
