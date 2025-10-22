@@ -14,6 +14,8 @@ Technologies Used
 
 Microbit V2.0
 
+Neopixel
+
 ---
 
 ## How It Works
